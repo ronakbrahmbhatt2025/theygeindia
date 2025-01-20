@@ -229,17 +229,93 @@ footer {
     border-top: 1px solid rgba(255,255,255,0.1);
 }
 
-/* Responsive design */
-@media (max-width: 768px) {
+/* Mobile Menu Icon */
+.mobile-menu-icon {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    /* Navigation */
+    .mobile-menu-icon {
+        display: block;
+    }
+
     .nav-links {
         display: none;
+        position: fixed;
+        top: 80px;
+        left: 0;
+        right: 0;
+        background: white;
+        flex-direction: column;
+        padding: 1rem;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 1rem 0;
+        text-align: center;
+    }
+
+    /* Logo section */
+    .logo table {
+        width: 100%;
     }
     
+    .logo img {
+        height: 60px;
+        width: auto;
+    }
+
+    .logo h1 {
+        font-size: 1rem;
+    }
+
+    /* Hero section */
     .hero-content h1 {
         font-size: 2rem;
     }
-    
+
+    /* Services section */
     .service-grid {
         grid-template-columns: 1fr;
+    }
+
+    /* Contact section */
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-form {
+        padding: 0 1rem;
+    }
+
+    /* General padding adjustments */
+    .services,
+    .about,
+    .contact {
+        padding: 3rem 1rem;
+    }
+}
+
+/* Small phones */
+@media screen and (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero-content p {
+        font-size: 0.9rem;
+    }
+
+    .cta-button {
+        padding: 0.8rem 1.5rem;
     }
 }
