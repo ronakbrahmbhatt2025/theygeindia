@@ -11,15 +11,12 @@
     <header>
         <nav class="navbar">
             <div class="logo">
-                <table><tr><td>
-                <img src="logo.png" height="100px" width="200px">&nbsp;</td>
-                <td>
+		<table><tr><td>
+		<img src="logo.png" height="100px" width="200px">&nbsp;</td>
+		<td>
                 <h1>YOG GLOBAL EXIM PRIVATE LIMITED</h1>
-                </td></tr></table>
-            </div>
-            <div class="mobile-menu-icon">
-                <i class="fas fa-bars"></i>
-            </div>
+            </td></tr></table>
+		</div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#services">Services</a></li>
@@ -63,14 +60,26 @@
         <div class="about-content">
             <div class="about-text">
                 <p>"Make everything as simple as possible but not simpler" - Albert Einstein</p>
-                <p>YOG Global Enterprises India brings years of experience in customs brokerage and logistics to the Indian market. Our team of experts ensures smooth international trade operations while maintaining compliance with Indian regulations.</p>
+                <p>YOG Global Exim Private Limited brings years of experience in customs brokerage and logistics to the Indian market. Our team of experts ensures smooth international trade operations while maintaining compliance with Indian regulations.</p>
             </div>
         </div>
     </section>
 
     <section id="contact" class="contact">
         <h2>Contact Us</h2>
+
         <div class="contact-grid">
+
+
+		<div class="contact-info">
+                <h3>The U.S.A Headquarter Office</h3>
+                <p><i class="fas fa-map-marker-alt"></i>  210 Iris Dr. Streamwood,<br> IL- 60107,<br>Chocago</p><br>
+                <p><i class="fas fa-envelope"></i> Admin@theyge.com, import@theyge.com</p>
+                <p><i class="fas fa-phone"></i> 1-312-788-9055?</p><br>
+		 <p><i><b>Website: </b></i> <a href="https://www.theyge.com/">www.theyge.com</a></p><br>
+            </div>
+
+
             <div class="contact-info">
                 <h3>Get in Touch</h3>
                 <p><i class="fas fa-map-marker-alt"></i>  737-738, Sun Gravitas,<br>
@@ -115,21 +124,5 @@ Gujarat, India</p><br>
             <p>&copy; 2025 YOG GLOBAL EXIM PRIVATE LIMITED India. All rights reserved.</p>
         </div>
     </footer>
-    <script>
-        // Mobile menu toggle
-        const mobileMenuIcon = document.querySelector('.mobile-menu-icon');
-        const navLinks = document.querySelector('.nav-links');
-        
-        mobileMenuIcon.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-        });
-
-        // Close mobile menu when clicking a link
-        document.querySelectorAll('.nav-links a').forEach(link => {
-            link.addEventListener('click', () => {
-                navLinks.classList.remove('active');
-            });
-        });
-    </script>
 </body>
 </html>
